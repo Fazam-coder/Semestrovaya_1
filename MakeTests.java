@@ -10,9 +10,11 @@ public class MakeTests {
         Random r = new Random();
         Path file = Paths.get("data.txt");
         ArrayList<String> lines = new ArrayList<>();
-        for (int i = 0; i < r.nextInt(50, 100); i++) {
+        int count1 = r.nextInt(50, 100);
+        for (int i = 0; i < count1; i++) {
             String line = "";
-            for (int j = 0; j < r.nextInt(100, 10000); j++) {
+            int count2 = r.nextInt(100, 10000);
+            for (int j = 0; j < count2; j++) {
                 line += (r.nextInt(0, 10000) + " ");
             }
             lines.add(line);
