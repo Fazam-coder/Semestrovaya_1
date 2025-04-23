@@ -12,12 +12,7 @@ public class TestSort {
             for (int i = 0; i < lst.length; i++) {
                 lst[i] = Integer.valueOf(items[i]);
             }
-
-            long start = System.nanoTime();
             MergeSort.sort(lst);
-            long end = System.nanoTime();
-            System.out.println(lst.length + " " + (end - start));
-
         }
     }
 }
